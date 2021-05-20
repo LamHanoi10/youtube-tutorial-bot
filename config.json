@@ -1,5 +1,5 @@
 {
-    "token": "ODQxMjIzNjE5MzYzNDcxMzkw.YJjojA.pgDc1JkKaZ3jPd5yfmN02f0gy7I",
+    "token": "YOUR_BOT_TOKEN",
     "prefix": "+",
-    "mongoDB": "mongodb+srv://youtubetutorial:baolam2010@hedydiscordtest.750dn.mongodb.net/test"
+    "mongoDB": "YOUR_MONGODB_CONNECTION"
 }
