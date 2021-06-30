@@ -1,13 +1,7 @@
 const Discord = require('discord.js')
 const bot = new Discord.Client()
-const { token, prefix, mongoDB } = require('./config.json')
+const { token, prefix } = require('./config.json')
 const fs = require('fs')
-
-const mongoose = require('mongoose')
-mongoose.connect(mongoDB, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-}).then((c) => console.log(c))
 
 bot.commands = new Discord.Collection()
 const commandFiles = fs.readdirSync('./commands').filter(f => f.endsWith(`.js`))
