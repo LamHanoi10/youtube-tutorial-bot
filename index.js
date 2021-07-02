@@ -1,9 +1,11 @@
 const Discord = require('discord.js')
 const bot = new Discord.Client()
 const { token, prefix } = require('./config.json')
+const db = require('quick.db')
 const fs = require('fs')
 
-bot.commands = new Discord.Collection()
+bot.db = db;
+bot.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands').filter(f => f.endsWith(`.js`))
 
 bot.on('ready', () => {
